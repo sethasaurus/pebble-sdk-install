@@ -1,14 +1,15 @@
-#--------------------------------------------------------------------------------------------------------
-# Pebble SDK Install
-# Linux, Windows (WSL) or Android
-#  -Seth 16/08/2022
-#--------------------------------------------------------------------------------------------------------
-# Install dependencies first:
-# https://github.com/sethasaurus/pebble-sdk-dependencies
-#--------------------------------------------------------------------------------------------------------
+#!/bin/bash
+echo '#--------------------------------------------------------------'
+echo '# Pebble SDK Install'
+echo '# Linux, Windows (WSL) or Android'
+echo '#  -Seth 16/08/2022'
+echo '#--------------------------------------------------------------'
+echo '# Make sure to install dependencies first:'
+echo '# https://github.com/sethasaurus/pebble-sdk-dependencies'
+echo '#--------------------------------------------------------------'
 
 #--------------------------------------------------------------------------------------------------------
-echo 'Creating dirs'
+echo 'Creating dir: ~/pebble-dev'
 #--------------------------------------------------------------------------------------------------------
 mkdir ~/pebble-dev
 cd ~/pebble-dev
@@ -54,9 +55,19 @@ deactivate
 
 #pebble sdk install ~/Downloads/sdk-core-4.3.tar.bz2
 
-#------------------------------------------------------------------------------------------------------------
-echo 'Done! Time to test the SDK'
-echo ' For Arm install - https://github.com/sethasaurus/pebble-sdk-arm'
-#------------------------------------------------------------------------------------------------------------
+echo '#----------------------------------------------'
+echo
+echo 'If you are installing on Arm, do the next step'
+echo 'https://github.com/sethasaurus/pebble-sdk-arm'
+echo
+echo 'Otherwise, you're done! Time to test the SDK'a
+echo
+echo 'Run the following to create a test project:'
+echo 'pebble new-project test'
+echo 'cd test'
+echo 'pebble build'
+echo 'pebble install --emulator=aplite'
+echo
+echo '#----------------------------------------------'
 
 
