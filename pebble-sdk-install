@@ -48,9 +48,9 @@ echo 'Installing virtualenv'
 #--------------------------------------------------------------------------------------------------------
 [ -e .env ] || virtualenv .env
 . .env/bin/activate
-pip install https://github.com/pyparsing/pyparsing/releases/download/pyparsing_2.4.7/pyparsing-2.4.7.tar.gz
-pip install -r requirements.txt
-pip install -r pebble-tool/requirements.txt
+python2.7 -m pip install https://github.com/pyparsing/pyparsing/releases/download/pyparsing_2.4.7/pyparsing-2.4.7.tar.gz
+python2.7 -m pip install -r requirements.txt
+python2.7 -m pip install -r pebble-tool/requirements.txt
 deactivate
 
 #pebble sdk install ~/Downloads/sdk-core-4.3.tar.bz2
